@@ -1,0 +1,42 @@
+version: '3'
+services:
+  api:
+    container_name: api
+    image: ciso360ai/directus-mod:latest
+    # build: 
+    #   context: .
+    #   dockerfile: Dockerfile.custom
+    restart: always
+    ports:
+      - "8080:8080"
+      - "8055:8055"
+    environment:
+      - TELEMETRY=false
+      - PUBLIC_URL="http://0.0.0.0:8080"
+      - DB_CLIENT=pg
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_DATABASE=db
+      - DB_USER=root
+      - DB_PASSWORD=ChangeMe!
+      - DB_SEARCH_PATH=public
+      - CACHE_ENABLED=false
+      - ADMIN_EMAIL=admin@example.com
+      - ADMIN_PASSWORD=ChangeMe!
+      - KEY=XXX-XXX-YYY-YYY
+      - SECRET=ZZZ-ZZZ-WWW-WWW
+    volumes:
+      - ./custom/supervisor.conf:/etc/supervisor.conf
+      - ./custom/extensions:/directus/extensions
+
+  postgres:
+    image: postgres:15
+    container_name: postgres
+    restart: always
+    command: ["postgres", "-c", "log_statement=none"]
+    environment:
+      - POSTGRES_DB=db
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=ChangeMe!
+    ports:
+      - 5432:5432
