@@ -227,7 +227,7 @@
 		"jest": "29.2.1",
 		"knex-mock-client": "1.8.4",
 		"rimraf": "3.0.2",
-		"supertest": "6.3.0",
+		"supertest": "6.3.1",
 		"ts-jest": "29.0.3",
 		"ts-node": "10.9.1",
 		"ts-node-dev": "2.0.0",
