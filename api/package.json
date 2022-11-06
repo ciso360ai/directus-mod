@@ -201,7 +201,7 @@
 		"@types/js-yaml": "4.0.5",
 		"@types/json2csv": "5.0.3",
 		"@types/jsonwebtoken": "8.5.9",
-		"@types/keyv": "3.1.4",
+		"@types/keyv": "4.2.0",
 		"@types/ldapjs": "2.2.4",
 		"@types/lodash": "4.14.186",
 		"@types/marked": "4.0.7",
