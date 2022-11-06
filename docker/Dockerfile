@@ -1,4 +1,4 @@
-ARG NODE_VERSION=16-alpine
+ARG NODE_VERSION=18-alpine
 
 FROM node:${NODE_VERSION} as builder
 
@@ -20,7 +20,7 @@ RUN rm *.tgz
 FROM node:${NODE_VERSION}
 
 ARG VERSION
-ARG REPOSITORY=directus/directus
+ARG REPOSITORY=ciso360ai/directus-mod
 
 LABEL directus.version="${VERSION}"
 
