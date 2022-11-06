@@ -64,19 +64,30 @@ const navItems = [
 	},
 ];
 
-const externalItems = computed(() => {
-	return [
-		{
-			icon: 'bug_report',
-			name: t('report_bug'),
-			href: 'https://github.com/directus/directus/issues/new',
-		},
-		{
-			icon: 'new_releases',
-			name: t('request_feature'),
-			href: 'https://github.com/directus/directus/discussions/new',
-		},
-	];
+		const externalItems = computed(() => {
+			const bugReportParams = new URLSearchParams({
+				template: 'bug_report.yml',
+				'directus-version': parsedInfo.value?.directus.version ?? '',
+				'node-version': parsedInfo.value?.node.version ?? '',
+				'operating-system': `${parsedInfo.value?.os.type ?? ''} ${parsedInfo.value?.os.version ?? ''}`,
+			});
+
+			return [
+				{
+					icon: 'bug_report',
+					name: t('report_bug'),
+					href: `https://github.com/ciso360ai/website/issues/new?${bugReportParams.toString()}`,
+				},
+				{
+					icon: 'new_releases',
+					name: t('request_feature'),
+					href: 'https://github.com/ciso360ai/website/discussions/new',
+				},
+			];
+		});
+
+		return { version, navItems, externalItems };
+	},
 });
 </script>
 
