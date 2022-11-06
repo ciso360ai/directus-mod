@@ -15,13 +15,6 @@
 				<v-text-overflow :text="item.name" />
 			</v-list-item-content>
 		</v-list-item>
-
-		<v-list-item href="https://github.com/directus/directus/releases" class="version">
-			<v-list-item-icon><v-icon name="directus" /></v-list-item-icon>
-			<v-list-item-content>
-				<v-text-overflow class="version" :text="`Directus ${version}`" />
-			</v-list-item-content>
-		</v-list-item>
 	</v-list>
 </template>
 
@@ -87,12 +80,12 @@ export default defineComponent({
 				{
 					icon: 'bug_report',
 					name: t('report_bug'),
-					href: `https://github.com/directus/directus/issues/new?${bugReportParams.toString()}`,
+					href: `https://github.com/ciso360ai/website/issues/new?${bugReportParams.toString()}`,
 				},
 				{
 					icon: 'new_releases',
 					name: t('request_feature'),
-					href: 'https://github.com/directus/directus/discussions/new',
+					href: 'https://github.com/ciso360ai/website/discussions/new',
 				},
 			];
 		});

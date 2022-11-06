@@ -20,7 +20,7 @@ RUN rm *.tgz
 FROM node:${NODE_VERSION}
 
 ARG VERSION
-ARG REPOSITORY=directus/directus
+ARG REPOSITORY=ciso360ai/directus-mod
 
 LABEL directus.version="${VERSION}"
 
