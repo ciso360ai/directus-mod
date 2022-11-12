@@ -5,7 +5,7 @@ import { createApp } from 'vue';
 import { version } from '../package.json';
 import App from './app.vue';
 import { registerComponents } from './components/register';
-import { DIRECTUS_LOGO } from './constants';
+// import { DIRECTUS_LOGO } from './constants';
 import { registerDirectives } from './directives/register';
 import { registerPanels } from './panels/register';
 import { registerDisplays } from './displays/register';
@@ -21,16 +21,16 @@ import { registerOperations } from './operations/register';
 init();
 
 async function init() {
-	console.log(DIRECTUS_LOGO);
-	console.info(
-		`Hey! Interested in helping build this open-source data management platform?\nIf so, join our growing team of contributors at: https://directus.chat`
-	);
+	// console.log(DIRECTUS_LOGO);
+	// console.info(
+	// 	`Hey! Interested in helping build this open-source data management platform?\nIf so, join our growing team of contributors at: https://directus.chat`
+	// );
 
-	if (import.meta.env.DEV) {
-		console.info(`%c🐰 Starting Directus v${version}...`, 'color:Green');
-	} else {
-		console.info(`%c🐰 Starting Directus...`, 'color:Green');
-	}
+	// if (import.meta.env.DEV) {
+	// 	console.info(`%c🐰 Starting Directus v${version}...`, 'color:Green');
+	// } else {
+	// 	console.info(`%c🐰 Starting Directus...`, 'color:Green');
+	// }
 
 	console.time('🕓 Application Loaded');
 
