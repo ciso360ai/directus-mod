@@ -155,7 +155,7 @@
 		"resolve-cwd": "3.0.0",
 		"rollup": "3.2.3",
 		"samlify": "2.8.6",
-		"sanitize-html": "2.7.2",
+		"sanitize-html": "2.7.3",
 		"sharp": "0.31.1",
 		"snappy": "7.2.0",
 		"stream-json": "1.7.4",
