@@ -154,7 +154,7 @@
 		"rate-limiter-flexible": "2.3.12",
 		"resolve-cwd": "3.0.0",
 		"rollup": "3.2.3",
-		"samlify": "2.8.6",
+		"samlify": "2.8.7",
 		"sanitize-html": "2.7.2",
 		"sharp": "0.31.1",
 		"snappy": "7.2.0",
