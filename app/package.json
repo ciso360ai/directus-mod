@@ -61,7 +61,7 @@
 		"@storybook/client-api": "6.5.13",
 		"@storybook/client-logger": "6.5.13",
 		"@storybook/core-common": "6.5.13",
-		"@storybook/node-logger": "6.5.13",
+		"@storybook/node-logger": "6.5.14",
 		"@storybook/vue3": "6.5.13",
 		"@tinymce/tinymce-vue": "4.0.5",
 		"@turf/meta": "6.5.0",
