@@ -136,7 +136,7 @@
 		"react": "18",
 		"react-dom": "18",
 		"rimraf": "3.0.2",
-		"rollup": "3.3.0",
+		"rollup": "3.5.1",
 		"sass": "1.56.1",
 		"tinymce": "5.10.2",
 		"tslib": "2.4.1",
