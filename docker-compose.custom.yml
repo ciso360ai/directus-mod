@@ -3,9 +3,9 @@ services:
   api:
     container_name: api
     image: ciso360ai/directus-mod:latest
-    build: 
-      context: .
-      dockerfile: Dockerfile.custom
+    # build: 
+    #   context: .
+    #   dockerfile: Dockerfile.custom
     restart: always
     ports:
       - "8080:8080"
