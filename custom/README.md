@@ -64,3 +64,16 @@ pnpm --filter @directus/app dev
 ## Build image
 
 docker buildx build --push --platform linux/amd64,linux/arm64 --tag ciso360ai/directus-mod:latest .
+
+# Sync fork
+```
+git checkout main
+git fetch upstream
+```
+rebase to the version tag
+```
+git rebase v9.21.2
+git am --show-current-patch
+```
+fix any conflicts then add a new release in github with a custom tag, eg. v9.21.2-mod
+This will create images using git actions
