@@ -25,6 +25,8 @@ services:
       - ADMIN_PASSWORD=ChangeMe!
       - KEY=XXX-XXX-YYY-YYY
       - SECRET=ZZZ-ZZZ-WWW-WWW
+      - EXTENSIONS_AUTO_RELOAD=true
+      - CONTENT_SECURITY_POLICY_DIRECTIVES__SCRIPT_SRC="'self' 'unsafe-eval' 'unsafe-inline' https://cdnjs.cloudflare.com/ajax/libs/shepherd.js/11.0.1/js/"
     volumes:
       - ./custom/supervisor.conf:/etc/supervisor.conf
       - ./custom/extensions:/directus/extensions
