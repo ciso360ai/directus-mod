@@ -77,5 +77,3 @@ git am --show-current-patch
 ```
 fix any conflicts then add a new release in github with a custom tag, eg. v9.21.2-mod
 This will create images using git actions
-
-To abort and get back to the state before "git rebase", run "git rebase --abort".
