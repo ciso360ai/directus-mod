@@ -109,7 +109,7 @@
 		"dotenv": "16.0.3",
 		"encodeurl": "1.0.2",
 		"eventemitter2": "6.4.9",
-		"execa": "5.1.1",
+		"execa": "6.1.0",
 		"exif-reader": "1.1.0",
 		"express": "4.18.2",
 		"fast-redact": "3.1.2",
