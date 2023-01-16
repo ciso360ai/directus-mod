@@ -193,7 +193,7 @@
 		"@types/mime-types": "2.1.1",
 		"@types/ms": "0.7.31",
 		"@types/node": "18.11.17",
-		"@types/node-cron": "3.0.6",
+		"@types/node-cron": "3.0.7",
 		"@types/nodemailer": "6.4.7",
 		"@types/object-hash": "3.0.2",
 		"@types/qs": "6.9.7",
