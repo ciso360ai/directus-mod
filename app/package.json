@@ -82,7 +82,7 @@
 		"@types/wellknown": "0.5.4",
 		"@vitejs/plugin-vue": "4.0.0",
 		"@vue/compiler-sfc": "3.2.45",
-		"@vue/test-utils": "2.2.6",
+		"@vue/test-utils": "2.2.10",
 		"apexcharts": "3.36.3",
 		"axios": "1.2.1",
 		"babel-loader": "9",
