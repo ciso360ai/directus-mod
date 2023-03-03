@@ -105,7 +105,7 @@
 		"jsonlint-mod": "1.7.6",
 		"lodash": "4.17.21",
 		"mapbox-gl": "1.13.3",
-		"maplibre-gl": "1.15.3",
+		"maplibre-gl": "2.4.0",
 		"marked": "4.2.12",
 		"micromustache": "8.0.3",
 		"mime": "3.0.0",
