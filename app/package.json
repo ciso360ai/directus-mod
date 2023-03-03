@@ -104,7 +104,7 @@
 		"json2csv": "5.0.7",
 		"jsonlint-mod": "1.7.6",
 		"lodash": "4.17.21",
-		"mapbox-gl": "1.13.3",
+		"mapbox-gl": "2.13.0",
 		"maplibre-gl": "1.15.3",
 		"marked": "4.2.12",
 		"micromustache": "8.0.3",
