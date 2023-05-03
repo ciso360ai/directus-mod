@@ -18,72 +18,65 @@
 	</v-list>
 </template>
 
-<script lang="ts">
-import { computed, defineComponent } from 'vue';
+<script setup lang="ts">
+import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 
-export default defineComponent({
-	setup() {
-		const version = __DIRECTUS_VERSION__;
+const version = __DIRECTUS_VERSION__;
 
-		const { t } = useI18n();
+const { t } = useI18n();
 
-		const navItems = [
-			{
-				icon: 'public',
-				name: t('settings_project'),
-				to: `/settings/project`,
-			},
-			{
-				icon: 'list_alt',
-				name: t('settings_data_model'),
-				to: `/settings/data-model`,
-			},
-			{
-				icon: 'admin_panel_settings',
-				name: t('settings_permissions'),
-				to: `/settings/roles`,
-			},
-			{
-				icon: 'bookmark',
-				name: t('settings_presets'),
-				to: `/settings/presets`,
-			},
-			{
-				icon: 'translate',
-				name: t('settings_translation_strings'),
-				to: `/settings/translation-strings`,
-			},
-			{
-				icon: 'anchor',
-				name: t('settings_webhooks'),
-				to: `/settings/webhooks`,
-			},
-			{
-				icon: 'bolt',
-				name: t('settings_flows'),
-				to: `/settings/flows`,
-			},
-		];
-
-		const externalItems = computed(() => {
-			return [
-				{
-					icon: 'bug_report',
-					name: t('report_bug'),
-					href: `https://github.com/ciso360ai/website/issues/new?${bugReportParams.toString()}`,
-					href: 'https://github.com/directus/directus/issues/new?template=bug_report.yml',
-				},
-				{
-					icon: 'new_releases',
-					name: t('request_feature'),
-					href: 'https://github.com/ciso360ai/website/discussions/new',
-				},
-			];
-		});
-
-		return { version, navItems, externalItems };
+const navItems = [
+	{
+		icon: 'public',
+		name: t('settings_project'),
+		to: `/settings/project`,
 	},
+	{
+		icon: 'list_alt',
+		name: t('settings_data_model'),
+		to: `/settings/data-model`,
+	},
+	{
+		icon: 'admin_panel_settings',
+		name: t('settings_permissions'),
+		to: `/settings/roles`,
+	},
+	{
+		icon: 'bookmark',
+		name: t('settings_presets'),
+		to: `/settings/presets`,
+	},
+	{
+		icon: 'translate',
+		name: t('settings_translation_strings'),
+		to: `/settings/translation-strings`,
+	},
+	{
+		icon: 'anchor',
+		name: t('settings_webhooks'),
+		to: `/settings/webhooks`,
+	},
+	{
+		icon: 'bolt',
+		name: t('settings_flows'),
+		to: `/settings/flows`,
+	},
+];
+
+const externalItems = computed(() => {
+	return [
+		{
+			icon: 'bug_report',
+			name: t('report_bug'),
+			href: 'https://github.com/directus/directus/issues/new?template=bug_report.yml',
+		},
+		{
+			icon: 'new_releases',
+			name: t('request_feature'),
+			href: 'https://github.com/directus/directus/discussions/new?category=feature-requests',
+		},
+	];
 });
 </script>
 
